@@ -6,14 +6,15 @@ using UnityEngine.UI;
 public class change : MonoBehaviour
 {
 
-    public Texture2D myTexture;
+    public Texture myTexture;
     public InputField inputField;
-    public Image image;
+    public GameObject image;
+    public MeshRenderer sr;
     public string url;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sr = image.GetComponent<MeshRenderer>();
     }
 
     // Update is called once per frame
@@ -32,9 +33,7 @@ public class change : MonoBehaviour
         WWW GetImage = new WWW(url);
         yield return GetImage;
         myTexture = GetImage.texture;
-        Sprite sprite = Sprite.Create(myTexture, new Rect(0, 0, myTexture.width, myTexture.height), new Vector2(0, 0));
-        image.sprite = sprite;
-
+        sr.materials[0].SetTexture("_MainTex",myTexture);
 
     }
 }
