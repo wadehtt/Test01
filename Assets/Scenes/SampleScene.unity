@@ -221,6 +221,7 @@ GameObject:
   - component: {fileID: 320307175}
   - component: {fileID: 320307174}
   - component: {fileID: 320307173}
+  - component: {fileID: 320307177}
   m_Layer: 5
   m_Name: ChangeButton
   m_TagString: Untagged
@@ -261,10 +262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6fdd046dc9627746924e7a6251957c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myTexture: {fileID: 0}
   inputField: {fileID: 1082359541}
   image: {fileID: 151565350}
-  sr: {fileID: 0}
   url: 
 --- !u!114 &320307174
 MonoBehaviour:
@@ -360,6 +359,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320307171}
   m_CullTransparentMesh: 1
+--- !u!114 &320307177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320307171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7317778c6d45b9d41ac9d2e0fb893860, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &463227384 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: eceb1c7ed03e82d43841f8e8cb76ec00, type: 3}
